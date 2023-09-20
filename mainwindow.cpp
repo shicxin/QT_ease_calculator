@@ -2,12 +2,17 @@
 #include <iostream>
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
+#include "newlineedit.h"
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    NewlineEdit *mylineedit = new NewlineEdit;
+    mylineedit -> setParent(this);
+    mylineedit -> resize(360, 40);
+    mylineedit -> move(20, 145);
 }
 
 MainWindow::~MainWindow()

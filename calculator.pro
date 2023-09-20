@@ -10,10 +10,12 @@ CONFIG += c++17
 
 SOURCES += \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    newlineedit.cpp
 
 HEADERS += \
-    mainwindow.h
+    mainwindow.h \
+    newlineedit.h
 
 FORMS += \
     mainwindow.ui
